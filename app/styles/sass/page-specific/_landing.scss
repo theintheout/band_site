@@ -1,0 +1,80 @@
+@import "../mixins.scss";
+
+// .landing-hero {
+// 	position: relative; 
+// 	display: block; 
+// 	padding-top: 100px; 
+// 	height: 100vh !important;
+// 	background: $bgColor url('../images/bw-bg.gif') right top; 
+// 	background-attachment: fixed;
+// 	background-size: cover; 
+// }
+
+
+#landing {
+	opacity: 1; 
+	background: none; 
+	.wrapper {
+		background: none; 
+		position: relative; 
+		display: block; 
+		width: 100%;
+		height: 100vh;	
+	}
+	
+	
+	.band-member-bg1, 
+	.band-member-bg2, 
+	.band-member-bg3, 
+	.band-member-bg4 {
+		display: none; 
+		@include respond-to(phone-up) {
+			background-color: none; 
+			position: relative; 
+			display: block; 
+			height: 100vh; 
+			background-position: center center; 
+			background-size: cover !important; 
+			background-repeat: no-repeat !important;				
+			&:hover {
+				background-size: 60% !important; 
+				background-position: center center !important; 
+			}
+		}
+	}
+
+	
+	.band-member-bg1 {
+		background:  url('../images/bw-mike.gif'); 
+		&:hover {
+			background:  url('../images/tito-hover-1.png'); 
+		}
+	}
+	
+	.band-member-bg2 {
+		background:  url('../images/bw-dallas.jpg'); 
+		&:hover {
+			background: url('../images/tito-hover-2.png'); 
+		}
+		
+	}
+	
+	.band-member-bg3 {
+		background:  url('../images/bw-will.png'); 
+		background-position: left top; 
+		@include respond-to(phone-up) {
+			background-position: left -100px top; 
+		}
+		&:hover {
+			background:  url('../images/tito-hover-3.png'); 
+		}
+	}
+	
+	.band-member-bg4 {
+		background:  url('../images/bw-xain.gif'); 
+		&:hover {
+			background:  url('../images/tito-hover-4.png'); 
+		}
+	}
+	
+}

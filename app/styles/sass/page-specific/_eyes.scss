@@ -1,0 +1,15 @@
+@import "../mixins.scss";
+@import "../base.scss";
+
+#page-eyes {
+	background: none;
+	height: 100vh; 
+	
+	#vid-overlay {
+		opacity: 0.3; 
+	}
+	
+	.content-wrapper {
+		background: $themeColor1; 
+	}
+}

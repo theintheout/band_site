@@ -1,0 +1,74 @@
+@import "../mixins.scss";
+@import "../base.scss";
+
+#page-news {
+    .background {
+        background: none; 
+    } 
+	background: $bgColor;
+    h2 {
+        color: $themeColor2; 
+        font-size: 22px; 
+        margin-bottom: 0; 
+        float: left; 
+        @include text-background;
+        width: 90%;
+        border: none;  
+        line-height: 20px; 
+        border-bottom: 3px solid $themeColor3; 
+       
+    }
+    h3,  {
+        color: $themeColor2;
+        font-size: 22px; 
+        margin-top: 0; 
+        text-align: left; 
+        line-height: 20px; 
+        @include respond-to(phone-up) {
+            padding-right: 20px; 
+        }
+    }
+    p {
+        color: $themeColor2;
+        @include respond-to(phone-up) {
+            padding-right: 20px; 
+            }
+    }
+    .hero {
+        width: 100%; 
+        height: auto; 
+       img {
+           height: auto; 
+           width: 100%; 
+       }
+        
+    }
+}
+
+
+.news-article {
+	position: relative; 
+	display: block; 
+	height: auto; 
+	margin-bottom: 40px; 
+    @include text-background;
+	color: $copy; 
+    padding: 0; 
+	
+	.heading, .words {
+		display: block; 
+		position: relative; 
+		width: 100%; 
+	}
+    
+    .words {
+        padding: 20px; 
+        @include respond-to(phone-up) {
+            width: 90%; 
+            padding: 0; 
+        }
+    }
+	
+	
+
+}

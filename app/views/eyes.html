@@ -1,0 +1,22 @@
+<div id="page-eyes" ng-controller="EyesCtrl">
+	<div id="vid-overlay"></div>
+    	<div class="background">
+            <div class="content-wrapper">
+                
+                <!-- Start content -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>News</h1>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-3 list-group" ng-repeat="gallery in galleries">
+                        <eyes-gallery gallery-object='gallery'>
+                        </eyes-gallery>
+                    </div>
+                </div>
+                <!-- End content -->
+            </div>
+    	</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div id="page-news" ng-controller="NewsCtrl">
+	<div id="vid-overlay"></div>
+	<div class="background">
+		<!-- Start content -->
+		<div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+			         <h1>News</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12" ng-repeat="article in articles">
+                    <div class="list-group">
+                        <news-item article-object='article'></news-item>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!-- End content -->
+	</div>
+</div>
+

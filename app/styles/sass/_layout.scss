@@ -1,0 +1,30 @@
+@import "sass/base.scss";
+@import "sass/mixins.scss";
+
+#page-news, #page-live, #page-who, #page-eyes {
+    // padding-top: 112px; 
+	#vid-overlay {
+		opacity: 0.15; 
+	}
+}
+
+
+.background {
+	background: $themeColor2; 
+    padding-top: 90px; 
+    @include respond-to(phone-up) {
+		padding-top: 110px; 
+	}
+}
+
+.content-wrapper {
+	background-color: $themeColor3; 
+	margin-bottom: 108px; 
+}
+
+
+#page-eyes {
+    .background {
+        padding-top: 0 !important; 
+    }
+}

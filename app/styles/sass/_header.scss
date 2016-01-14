@@ -1,0 +1,19 @@
+@import 'base.scss'; 
+@import 'mixins.scss'; 
+/* Custom page header */
+.header {
+    padding: 0 !important;
+    height: auto;
+    margin-bottom: 0 !important;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+    background-color: $themeColor1; 
+    //  @include respond-to(phone-up) {
+    //       opacity:1; 
+    //   }
+      @include respond-to(tablet-up) {
+          padding: 30px !important; 
+      }
+}

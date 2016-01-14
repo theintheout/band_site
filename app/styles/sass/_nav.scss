@@ -1,0 +1,95 @@
+@import 'base.scss';
+@import 'mixins.scss';
+/* Custom page header */
+.header {
+    .navbar-header {
+        margin-left: 0 !important;
+        margin-right: 0 !important; 
+        height: auto; 
+        .logo {
+            display: block; 
+            padding: 0 !important;
+            height: auto; 
+            width: auto; 
+            float:left; 
+            @include respond-to(phone-up) {
+                width: 20%; 
+                display: none;
+                }
+            img {
+                // border-bottom: 3px solid $themeColor3; 
+                position: relative;
+                height: 90px;
+                display: block;
+                @include respond-to(phone-up) {
+                   height: 50px; 
+                }
+            }
+        }
+    }
+    .navbar-default {
+        border: none;
+        margin-bottom: 0;
+        background: $themeColor1;
+        @include respond-to(tablet-up) {
+            background: none;
+            }
+        .navbar-toggle {
+            border: none !important;
+            &:hover, &:focus {
+                background: none !important;
+                }
+            i.material-icons {
+                color: $themeColor3; 
+                font-size: 50px; 
+                }
+            }
+        .navbar-collapse {
+            border: none; 
+            background-color: $themeColor1;
+            }
+        .navbar-nav {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+             padding: 20px;     
+            @include respond-to(tablet-up) {
+                padding: 0; 
+            }                
+            .logo {
+                display: none; 
+                padding: 0 !important;
+                @include respond-to(phone-up) {
+                    display: block;
+                }
+                img {
+                    position: relative;
+                    margin: 0 auto;
+                    width: auto;
+                    height: 40px;
+                    display: block;
+                    transition: all 0.4s;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        li {
+            width: 14%;  
+            a {
+                font-size: 30px;
+                color: #f05337;
+                @include respond-to(phone-up) {
+                    text-align: center; 
+                    }
+                }
+            }
+        }
+        .active  {
+          a {
+            background: none !important;
+            border-bottom: 3px solid $themeColor3; 
+            }
+        }
+    }
+}

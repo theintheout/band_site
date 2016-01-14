@@ -1,0 +1,25 @@
+<div class="news-article">
+	<div class="heading container">
+        <div class="col-lg-10 col-md-12">
+            <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12">
+                    <h2>{{ articleObject.title }}</h2>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                   <h3>{{ articleObject.date }}</h3>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="words">
+                    <p>{{ articleObject.content }}</p>
+                    <a target="_blank" href="{{ articleObject.linkUrl }}">{{ articleObject.linkTitle }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-12">
+            <div class="hero">
+                <img ng-src="{{ articleObject.imgUrl }}">
+            </div>
+        </div>
+	</div>
+</div>
