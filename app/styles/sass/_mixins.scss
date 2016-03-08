@@ -32,3 +32,28 @@
     }
   }
 }
+
+
+// CUSOTOM TEST GRID
+
+@mixin row() {
+    font-size: 0; 
+}
+
+@mixin col($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+    width: percentage($col/$sum);
+    font-size: 16px; 
+    display: inline-block; 
+    vertical-align: $align;
+    box-sizing: border-box;
+    padding: 0 $gap;  
+    padding-left: if($first, 0, $gap);
+    padding-right: if($last, 0, $gap);
+    
+    @media only screem and (min-width: 768px) {
+        width: percentage($col/$sum); 
+        vertical-align: $align;
+    }
+}
+
+

@@ -1,99 +1,105 @@
 @import "sass/base.scss";
 @import "sass/mixins.scss";
 
-
 /* Custom page footer */
 .footer {
-    background-color: $themeColor1;
-    width: 100%;
-    color: #777;
-    position: fixed ;
-    bottom: 0;  
-    padding: 10px; 
-    height: auto; 
-    @include respond-to(phone-up) {
-      padding: 20px; 
-    }
-    
-   
-    
+  background-color: $themeColor1;
+  width: 100%;
+  color: #777;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  height: auto;
+  @include respond-to(phone-up) {
+    padding: 20px;
+  }
 
 }
 
-.subscribe{
+
+
+.subscribe {
   input[type="email"] {
-      border-radius: none !important;     
-      font-size: 14px; 
-      color: $themeColor3; 
-      border-left: none; 
-      border-right: none; 
-      border-top: none; 
-      border-bottom: 2px solid $themeColor3; 
-      padding: 0 0 10px 0;
-      margin-bottom: 10px; 
-      background: none; 
-      width: 80%;
-      float: left; 
-      outline: none;   
-      @include respond-to(phone-up) {
-          font-size: 30px; 
+    border-radius: none !important;
+    font-size: 14px;
+    color: $themeColor3;
+    border: none;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    background: none;
+    width: 100%;
+    float: left;
+    outline: none;
+    @include respond-to(phone-up) {
+      font-size: 30px;
+    }
+  }
+  input[type="submit"] {
+    background: none;
+    outline: none;
+    color: $themeColor3;
+    border: none;
+    float: right;
+    bottom: 0;
+    position: absolute;
+    font-size: 14px;
+    @include respond-to(phone-up) {
+      font-size: 20px;
+    }
+  }
+  ::-webkit-input-placeholder {
+    position: relative;
+    font-size: 14px;
+    top: 10px;
+    @include respond-to(phone-up) {
+      font-size: 18px;
+      top: 20px;
+    }
+  }
+}
+
+.social-links {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding-top: 15px;
+  @include respond-to(tablet-up) {
+    text-align: center;
+  }
+  a {
+    display: inline;
+    position: relative;
+    color: $themeColor2;
+    &:hover {
+      color: $themeColor3;
+    }
+    @include respond-to(tablet-up) {
+      float: right;
+    }
+    img {
+      width: auto;
+      height: 30px;
+      padding-right: 30px;
+        @include respond-to(tablet-up) {
+          padding-left: 30px;
+          padding-right: 0;
         }
     }
-  input[type="submit"] {
-      background: none; 
-      outline: none; 
-      color: $themeColor3; 
-      border: none; 
-      float: right; 
-      bottom: 0;
-      position: absolute; 
-      font-size: 14px; 
-      @include respond-to(phone-up) {
-        font-size: 20px;  
-      }
-  } 
-   ::-webkit-input-placeholder {
-        position: relative; 
-        font-size: 14px; 
-        top: 10px; 
-        @include respond-to(phone-up) {
-          font-size: 18px; 
-          top: 20px; 
-        }
-      }
+    //i {
+    //  position: relative;
+    //  display: inline;
+    //  font-size: 27px;
+    //  padding-left: 20px;
+    //  padding-right: 20px;
+    //  @include respond-to(tablet-up) {
+    //    font-size: 30px;
+    //    padding-left: 18px;
+    //  }
+    //
+    //}
+  }
 }
-
-
- .social-links {
-    position: relative; 
-    display: block; 
-    text-align: center; 
-    padding-top: 15px; 
-        a { 
-            display: inline;
-            position: relative;
-            color: $themeColor2;
-            &:hover {
-                color: $themeColor3;  
-                }
-            @include respond-to(tablet-up){
-                float: right;
-                }
-            i  {
-              position: relative;
-              display: inline;
-              font-size: 14px;
-              padding-left:10px;
-              @include respond-to(tablet-up){
-                  font-size: 30px;
-                  padding-left:18px;
-              }
-                
-          }
-      }
-}
-
 
 div#infolayer {
-    background: $themeColor1 !important; 
+  background: $themeColor1 !important;
 }

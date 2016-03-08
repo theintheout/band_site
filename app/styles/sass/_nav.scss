@@ -77,7 +77,7 @@
         li {
             width: 14%;  
             a {
-                font-size: 30px;
+                font-size: 20px;
                 color: #f05337;
                 @include respond-to(phone-up) {
                     text-align: center; 

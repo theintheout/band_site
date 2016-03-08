@@ -1,163 +1,186 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>The In The Out</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="yeomanApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Add your site or application content here -->
+<head>
+  <meta charset="utf-8">
+  <title>The In The Out</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
 
-    <!--<div id="vid-overlay"></div>-->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="logo" href="#/">
-              <img src="images/wh-logo.png">
-            </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                <i class="material-icons">details</i>
-            </button>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="yeomanApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+
+<!--<div id="vid-overlay"></div>-->
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="logo" href="#/">
+          <img src="images/wh-logo.png">
+        </a>
+        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">-->
+        <!--<i class="material-icons">details</i>-->
+        <!--</button>-->
+      </div>
+      <!-- Desktop Navigation -->
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <div auto-active>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a class="navbar-brand logo" href="#/">
+                    <img src="images/wh-logo.png">
+                  </a>
+                </li>
+                <!--<li><a ng-href="#/news">News</a></li>-->
+                <!--<li><a ng-href="#/when">When?</a></li>-->
+                <!--<li><a ng-href="#/eyes">Eyes</a></li>-->
+                <!--<li><a ng-href="#/ears">Ears</a></li>-->
+                <!--<li><a ng-href="#/watch">Watch</a></li>-->
+                <!--<li><a ng-href="#/who">Who?</a></li>-->
+              </ul>
+            </div>
           </div>
-          <!-- Desktop Navigation -->           
-              <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                <div auto-active>
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                      <ul class="nav navbar-nav">
-                        <li class="active">
-                          <a class="navbar-brand logo" href="#/">
-                            <img src="images/wh-logo.png">
-                          </a>
-                        </li>
-                        <li><a ng-href="#/news">News</a></li>
-                        <li><a ng-href="#/when">When?</a></li>
-                        <li><a ng-href="#/eyes">Eyes</a></li>
-                        <li><a ng-href="#/ears">Ears</a></li>
-                        <li><a ng-href="#/watch">Watch</a></li>
-                        <li><a ng-href="#/who">Who?</a></li>
-                      </ul>
-                     </div>
-                  </div>
-                </div>                                   
+        </div>
+      </div>
+      <!-- end Navigation -->
+    </div>
+  </div>
+</div>
+<!-- end Header -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 no-padding">
+      <div ng-view=""></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-xs-12">
+        <!-- Signup form -->
+        <div id="mc_embed_signup" class="subscribe">
+          <form action="//theintheout.us2.list-manage.com/subscribe/post?u=f14b41d1b380be21e2da140a0&amp;id=7553bafa6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <input type="email" placeholder="Subscribe" name="EMAIL" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
-            <!-- end Navigation -->
+          </form>
+        </div>
+        <div class="subscribe-underline"></div>
+        <!--End mc_embed_signup-->
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <iframe style="background: #000000; border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=671025354/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
+          <a href="http://theintheout.bandcamp.com/track/return" style="background: #000000;">Return by THE IN THE OUT</a>
+        </iframe>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <div class="social-links">
+          <a href="http://www.instagram.com/theintheout" target="_blank"/>
+          <!--<i class="fa fa-instagram"></i>-->
+            <img src="images/icons/instagram.png" alt="follow THE IN THE OUT on instagram" />
+          </a>
+          <a href="http://www.facebook.com/theintheoutband" target="_blank"/>
+          <!--<i class="fa fa-facebook"></i>-->
+            <img src="images/icons/facebook.png" alt="like THE IN THE OUT on facebook" />
+          </a>
+          <a href="http://www.twitter.com/theintheout" target="_blank"/>
+          <!--<i class="fa fa-twitter"></i>-->
+          <img src="images/icons/twitter.png" alt="follow THE IN THE OUT on twitter" />
+          </a>
+          <!--<a href="http://www.soundcloud.com/theintheout" target="_blank"/>-->
+            <!--<img src="images/icons/instagram.png" alt="listen to THE IN THE OUT on soundcloud" />-->
+          <!--&lt;!&ndash;<i class="fa fa-soundcloud"></i>&ndash;&gt;-->
+          <!--</a>-->
         </div>
       </div>
     </div>
-    <!-- end Header -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 no-padding">
-          <div ng-view=""></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-xs-12">
-                <!-- Signup form -->
-                <div id="mc_embed_signup" class="subscribe">
-                    <form action="//theintheout.us2.list-manage.com/subscribe/post?u=f14b41d1b380be21e2da140a0&amp;id=7553bafa6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                        <div class="mc-field-group">
-                            <input type="email" placeholder="Subscribe" name="EMAIL" id="mce-EMAIL">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        </div>
-                    </form>
-                </div>    
-                <!--End mc_embed_signup-->
-            </div>
-            <div class="col-lg-4 col-xs-12">
-            <iframe style="background: #000000; border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=671025354/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
-                <a href="http://theintheout.bandcamp.com/track/return" style="background: #000000;">Return by THE IN THE OUT</a>
-            </iframe>
-            </div>
-            <div class="col-lg-4 col-xs-12">
-            <div class="social-links">
-                <a href="http://www.instagram.com/theintheout" target="_blank" />
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="http://www.facebook.com/theintheoutband" target="_blank" />
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="http://www.twitter.com/theintheout" target="_blank" />
-                    <i class="fa fa-twitter"></i>
-                </a> 
-                <a href="http://www.soundcloud.com/theintheout" target="_blank" />
-                    <i class="fa fa-soundcloud"></i>
-                </a>           
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    !function (A, n, g, u, l, a, r) {
+      A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+            (A[l].q = A[l].q || []).push(arguments)
+          }, A[l].l = +new Date, a = n.createElement(g),
+          r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+  <!-- build:js(.) scripts/vendor.js -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/material-design-lite/material.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/who.js"></script>
+  <script src="scripts/controllers/live.js"></script>
+  <script src="scripts/controllers/news.js"></script>
+  <script src="scripts/directives/newsitem.js"></script>
+  <script src="scripts/directives/liveitem.js"></script>
+  <script src="scripts/directives/autoactive.js"></script>
+  <!--<script src="bower_components/instafeed.js/instafeed.js"></script>-->
+  <script src="scripts/custom.js"></script>
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-    <!-- build:js(.) scripts/vendor.js -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/material-design-lite/material.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
-    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/who.js"></script>
-        <script src="scripts/controllers/live.js"></script>
-        <script src="scripts/controllers/news.js"></script>
-        <script src="scripts/directives/newsitem.js"></script>
-        <script src="scripts/directives/liveitem.js"></script>
-        <script src="scripts/directives/autoactive.js"></script>
-        <!--<script src="bower_components/instafeed.js/instafeed.js"></script>-->
-        <script src="scripts/custom.js"></script>
-
-        <script src="scripts/controllers/eyes.js"></script>
-        <script src="scripts/directives/eyesgallery.js"></script>
-        <!-- endbuild -->
+  <script src="scripts/controllers/eyes.js"></script>
+  <script src="scripts/directives/eyesgallery.js"></script>
+  <!-- endbuild -->
 </body>
 </html>

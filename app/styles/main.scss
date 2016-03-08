@@ -56,22 +56,6 @@ body {
 
 }
 
-h1, h2 {
-  font-family: 'Oswald', sans-serif;
-  margin-top: 0; 
-}
-
-p {
-  font-family: 'Quicksand', serif;
-  font-size: 1.2em; 
-  line-height: 25px;
-  font-weight: 300;
-}
-
-a, a.link, a.visited {
-  color: $highlight; 
-  text-decoration: none !important 
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

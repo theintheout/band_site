@@ -61,11 +61,10 @@
 		width: 100%; 
 	}
     
-    .words {
-        padding: 20px; 
+    .words, .hero {
+        padding: 0; 
         @include respond-to(phone-up) {
-            width: 90%; 
-            padding: 0; 
+            padding: 20px; 
         }
     }
 	

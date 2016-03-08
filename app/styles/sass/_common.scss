@@ -10,3 +10,17 @@
 	padding-left: 0 !important; 
 	padding-right: 0 !important; 
 }
+
+.underline {
+	display: block;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+}
+
+.subscribe-underline {
+	@extend .underline;
+	background: $themeColor3;
+}
