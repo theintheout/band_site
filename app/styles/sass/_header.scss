@@ -1,19 +1,63 @@
-@import 'base.scss'; 
-@import 'mixins.scss'; 
+@import 'base.scss';
+@import 'mixins.scss';
 /* Custom page header */
 .header {
-    padding: 0 !important;
+  padding: 0 !important;
+  height: auto;
+  margin-bottom: 0 !important;
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: 5;
+  background-color: $themeColor1;
+  @include respond-to(phone-up) {
+    padding: 10px !important;
     height: auto;
-    margin-bottom: 0 !important;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1;
-    background-color: $themeColor1; 
-    //  @include respond-to(phone-up) {
-    //       opacity:1; 
-    //   }
+   }
+  @include respond-to(desktop-up) {
+    padding: 20px !important;
+    //height: auto;
+  }
+
+  .banner {
+    display: inline-block;
+    float: right;
+    img {
+      text-align: right;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+
+  .social-links {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    @include respond-to(tablet-up) {
+      text-align: center;
+    }
+    a {
+      display: inline;
+      position: relative;
+      color: $themeColor2;
       @include respond-to(tablet-up) {
-          padding: 30px !important; 
       }
+      img {
+        width: 23%;
+        height: auto;
+        padding: 0 10px 0 10px;
+        @include hover-transition;
+        &:hover {
+          opacity: 0.6;
+        }
+        @include respond-to(tablet-up) {
+        }
+      }
+    }
+  }
 }

@@ -3,17 +3,20 @@
 
 /* Custom page footer */
 .footer {
-  background-color: $themeColor1;
   width: 100%;
   color: #777;
   position: fixed;
   bottom: 0;
-  padding: 10px;
+  padding: 0 10px;
   height: auto;
+  z-index: 3;
   @include respond-to(phone-up) {
     padding: 20px;
   }
-
+  @include respond-to(tablet-up) {
+    background: none;
+    background: rgba(0,0,0,0.76);
+  }
 }
 
 
@@ -65,36 +68,6 @@
   }
 }
 
-.social-links {
-  position: relative;
-  display: block;
-  text-align: left;
-  padding-top: 15px;
-  @include respond-to(tablet-up) {
-    text-align: center;
-  }
-  a {
-    display: inline;
-    position: relative;
-    color: $themeColor2;
-    @include respond-to(tablet-up) {
-      float: right;
-    }
-    img {
-      width: auto;
-      height: 15px;
-      padding-right: 30px;
-      @include hover-transition;
-      &:hover {
-        opacity: 0.6;
-      }
-        @include respond-to(tablet-up) {
-          padding-left: 30px;
-          padding-right: 0;
-        }
-    }
-  }
-}
 
 div#infolayer {
   background: $themeColor1 !important;

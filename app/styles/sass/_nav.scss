@@ -2,94 +2,147 @@
 @import 'mixins.scss';
 /* Custom page header */
 .header {
-    .navbar-header {
-        margin-left: 0 !important;
-        margin-right: 0 !important; 
-        height: auto; 
-        .logo {
-            display: block; 
-            padding: 0 !important;
-            height: auto; 
-            width: auto; 
-            float:left; 
-            @include respond-to(phone-up) {
-                width: 20%; 
-                display: none;
-                }
-            img {
-                // border-bottom: 3px solid $themeColor3; 
-                position: relative;
-                height: 90px;
-                display: block;
-                @include respond-to(phone-up) {
-                   height: 50px; 
-                }
-            }
-        }
-    }
-    .navbar-default {
-        border: none;
-        margin-bottom: 0;
-        background: $themeColor1;
+  .navbar-header {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: auto;
+    .logo {
+      display: block;
+      padding: 10px;
+      height: auto;
+      width: auto;
+      float: left;
+      @include respond-to(phone-up) {
+        width: 20%;
+        display: none;
+      }
+      @include respond-to(tablet-up) {
+        padding: 0 20px 0 0;
+      }
+      img {
+        // border-bottom: 3px solid $themeColor3;
+        position: relative;
+        height: 50px;
+        display: block;
         @include respond-to(tablet-up) {
-            background: none;
-            }
-        .navbar-toggle {
-            border: none !important;
-            &:hover, &:focus {
-                background: none !important;
-                }
-            i.material-icons {
-                color: $themeColor3; 
-                font-size: 50px; 
-                }
-            }
-        .navbar-collapse {
-            border: none; 
-            background-color: $themeColor1;
-            }
-        .navbar-nav {
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-             padding: 20px;     
-            @include respond-to(tablet-up) {
-                padding: 0; 
-            }                
-            .logo {
-                display: none; 
-                padding: 0 !important;
-                @include respond-to(phone-up) {
-                    display: block;
-                }
-                img {
-                    position: relative;
-                    margin: 0 auto;
-                    width: auto;
-                    height: 40px;
-                    display: block;
-                    transition: all 0.4s;
-                    &:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
-        li {
-            width: 14%;  
-            a {
-                font-size: 20px;
-                color: #f05337;
-                @include respond-to(phone-up) {
-                    text-align: center; 
-                    }
-                }
-            }
+          height: 90px;
         }
-        .active  {
-          a {
-            background: none !important;
-            border-bottom: 3px solid $themeColor3; 
-            }
-        }
+      }
     }
+  }
+  a.navbar-brand.logo {
+    height: auto;
+    img {
+      height: 50px;
+    }
+  }
+  .navbar-default {
+    border: none;
+    margin-bottom: 0;
+    background: $themeColor1;
+    @include respond-to(tablet-up) {
+      background: none;
+    }
+    .navbar-toggle {
+      border: none !important;
+      &:hover, &:focus {
+        background: none !important;
+      }
+      i.material-icons {
+        color: $themeColor3;
+        font-size: 27px;
+        @include respond-to(tablet-up) {
+          font-size: 50px;
+        }
+      }
+      span.glyphicon {
+        color: $themeColor3;
+        font-size: 27px;
+        @include respond-to(tablet-up) {
+          font-size: 50px;
+        }
+      }
+    }
+    .navbar-collapse {
+      border: none;
+      background-color: $themeColor1;
+      height: 100vh;
+      @include respond-to(phone-up) {
+        height:auto;
+      }
+    }
+    .navbar-nav {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      @include respond-to(tablet-up) {
+        padding: 0;
+      }
+      .logo {
+        display: none;
+        padding: 0 !important;
+        margin-bottom: 6px;
+        @include border-bottom;
+        @include respond-to(phone-up) {
+          display: block;
+          //padding-top: 20px;
+        }
+        //@include respond-to(desktop-up) {
+        //  padding-top: 0;
+        //}
+
+        img {
+          position: relative;
+          margin: 0 auto;
+          width: 90%;
+          height: auto;
+          display: block;
+          padding-bottom: 8px;
+          transition: all 0.4s;
+          &:hover {
+            opacity: 0.8;
+          }
+          //@include respond-to(desktop-up) {
+          //  height: 70px;
+          //}
+        }
+      }
+      li {
+        width: 100%;
+        @include respond-to(phone-up) {
+          width: 70px;
+        }
+        @include respond-to(desktop-up) {
+          width: 150px;
+        }
+        a {
+          color: #f05337;
+          @include respond-to(phone-up) {
+            font-size: 15px;
+            text-align: center;
+            padding-top:17px;
+            padding-bottom:3px;
+          }
+          @include respond-to(desktop-up) {
+            font-size: 20px;
+            padding-bottom:20px;
+          }
+        }
+      }
+    }
+    .active {
+      a {
+        background: none !important;
+        color: white !important ;
+        //@include border-bottom;
+        //border-color: grey;
+      }
+    }
+  }
+  .hero-social {
+    @include respond-to(phone-down) {
+      position:absolute;
+      bottom: 200px;
+    }
+  }
 }

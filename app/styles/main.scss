@@ -12,7 +12,8 @@
 @import "sass/extended-grid.scss";
 @import "sass/mixins.scss";
 /* Directive specific */
-@import "sass/page-specific/newsitem.scss"; 
+@import "sass/page-specific/newsitem.scss";
+@import "sass/page-specific/who.scss";
 @import "sass/page-specific/liveitem.scss"; 
 @import "sass/page-specific/landing.scss"; 
 @import "sass/page-specific/eyes.scss"; 
@@ -36,6 +37,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  //font-family: "museo-sans",sans-serif;
   font-family: 'Oswald', sans-serif;
   font-weight: 400; 
   background-color: $bgColor; 
@@ -96,6 +98,10 @@ body {
 @include respond-to(tablet-up){
   .container {
     max-width: 730px;
+  }
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   /* Remove the padding we set earlier */

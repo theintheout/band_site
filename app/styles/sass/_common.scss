@@ -1,26 +1,42 @@
 .fl-right {
-	float: right !important; 
+  float: right !important;
 }
 
 .fl-left {
-	float: left !important; 
+  float: left !important;
 }
 
 .no-padding {
-	padding-left: 0 !important; 
-	padding-right: 0 !important; 
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .underline {
-	display: block;
-	height: 3px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	margin-bottom: 10px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.device-full-width {
+  @include respond-to(phone-down) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.aCenter {
+  text-align: center;
 }
 
 .subscribe-underline {
-	@extend .underline;
-	background: $themeColor3;
+  @extend .underline;
+  background: $themeColor3;
+}
+
+.vert-middle {
+  display: table;
+  height: 100%;
 }

@@ -1,27 +1,35 @@
-h1 {
-    background-color: $themeColor3; 
-    color: $themeColor2;
-    padding: 10px;
-    width: auto;  
-    font-size: 50px; 
-    text-transform: uppercase; 
-}
-
-
+@import 'base.scss';
+@import 'mixins.scss';
 
 h1, h2 {
   font-family: 'Oswald', sans-serif;
-  margin-top: 0; 
+  //font-family: "museo-sans",sans-serif;
+  margin-top: 0;
 }
 
+
+h2 {
+  font-size: 20px;
+  @include respond-to(tablet-up) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 17px;
+  @include respond-to(tablet-up) {
+    font-size: 20px;
+  }
+}
 p {
-  font-family: 'Quicksand', serif;
-  font-size: 1.0em; 
+  //font-family: 'Quicksand', serif;
+  font-family: "museo-sans",sans-serif;
+  font-size: 0.8em;
   line-height: 25px;
   font-weight: 300;
 }
 
 a, a.link, a.visited {
-  color: $highlight; 
+  color: $highlight !important;
   text-decoration: none !important 
 }

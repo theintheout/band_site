@@ -1,0 +1,40 @@
+@import "../mixins.scss";
+@import "../base.scss";
+
+#page-who {
+  h1 {
+    @include massive-heading;
+    //border-bottom: none;
+  }
+  h2 {
+    text-transform: lowercase !important;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    color: $themeColor2;
+    span {
+      color: $themeColor3;
+      &:after {
+        color: grey;
+        font-weight: 100;
+        content: ' / ';
+      }
+      &:last-child {
+        content: none !important;
+      }
+    }
+  }
+  h3 {
+    //color: white !important;
+  }
+  background: none;
+  height: 100vh;
+
+  //#vid-overlay {
+  //	opacity: 0.8;
+  //}
+
+  .content-wrapper {
+    background: $themeColor1;
+  }
+}

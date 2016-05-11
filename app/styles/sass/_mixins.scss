@@ -14,6 +14,16 @@
 }
 
 @mixin respond-to($breakpoint) {
+  @if $breakpoint == "phone-down" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "tablet-down" {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
   @if $breakpoint == "phone-up" {
     @media (min-width: 768px) {
       @content;
@@ -54,6 +64,30 @@
         width: percentage($col/$sum); 
         vertical-align: $align;
     }
+}
+
+
+@mixin border-bottom {
+  border-bottom: 2px solid $themeColor3;
+}
+
+
+@mixin trans-border {
+  border: 1px solid rgba(0,0,0,0);
+}
+
+@mixin massive-heading {
+  color: $themeColor2;
+  padding-left: 0;
+  font-size: 70px;
+  text-align: center;
+  //@include border-bottom;
+  @include respond-to(phone-up) {
+    font-size: 190px;
+  }
+  @include respond-to(desktop-up) {
+    font-size: 270px;
+  }
 }
 
 
